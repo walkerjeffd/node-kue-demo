@@ -21,6 +21,8 @@ app.use(bodyParser.urlencoded());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+// app.use(kue.app);
+
 app.use('/', routes);
 app.use('/users', users);
 
